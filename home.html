@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasdeep Sidhu.</title>
+    <link rel="icon" type="image/png" href="assets/portfolioImg.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- NavBar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="logo">JS<span class="logo-dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="resume.pdf" download class="nav-cta">Resume <i class="fa fa-arrow-down"></i></a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#about" class="mob-link">About</a></li>
+                <li><a href="#experience" class="mob-link">Experience</a></li>
+                <li><a href="#projects" class="mob-link">Projects</a></li>
+                <li><a href="#contact" class="mob-link">Contact</a></li>
+                <li><a href="resume.pdf" download class="mob-link">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero">
+        <div id="vanta-bg"></div>
+        <div class="hero-content">
+            <div class="hero-tag reveal-up delay-1">Based in Toronto, CA 📍</div>
+            <h1 class="hero-name reveal-up delay-2">Jasdeep<br>Sidhu<span class="teal-dot">.</span></h1>
+            <p class="hero-sub reveal-up delay-3">Computer Science @ Toronto Metropolitan University.<br>Seeking new grad opportunities for Spring/Summer 2026.</p>
+            <div class="hero-actions reveal-up delay-4">
+                <a href="#projects" class="btn-primary">View Work</a>
+                <a href="#contact" class="btn-ghost">Get in Touch</a>
+            </div>
+            <div class="hero-socials reveal-up delay-5">
+                <a href="https://www.linkedin.com/in/jasdeepsidhu8/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Jasdeep-S" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:jsidhu1827@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="scroll-cue">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-label">01: About</div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">Turning ideas<br>into <em>code.</em></h2>
+                    <p>Hey there! I'm a computer science major at Toronto Metropolitan University (formerly Ryerson) with hands on experience in software development and data engineering.</p>
+                    <p>You'll find everything I'm building, learning, and experimenting with right here.</p>
+                    <a href="assets/JasdeepResume.pdf" download class="inline-link">Download Resume <i class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="about-stack">
+                    <div class="stack-label">Tech Stack</div>
+                    <div class="stack-grid">
+                        <div class="stack-item">Python</div>
+                        <div class="stack-item">SQL</div>
+                        <div class="stack-item">Java</div>
+                        <div class="stack-item">JavaScript</div>
+                        <div class="stack-item">HTML / CSS</div>
+                        <div class="stack-item">ETL / ELT</div>
+                        <div class="stack-item">Microsoft Fabric</div>
+                        <div class="stack-item">Azure</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <div class="section-label">02: Experience</div>
+            <h2 class="section-title">My<br>experience.</h2>
+            <div class="timeline">
+
+                <div class="tl-item">
+                    <div class="tl-left">
+                        <div class="tl-period">Jun 2025 — Dec 2025</div>
+                        <div class="tl-dot active"></div>
+                    </div>
+                    <div class="tl-card teal">
+                        <div class="tl-company">Toronto Parking Authority</div>
+                        <div class="tl-role">Data Engineer / Developer</div>
+                        <ul class="tl-bullets">
+                            <li>Built and maintained scalable <strong>ETL pipelines</strong> in <strong>Microsoft Fabric</strong> using <strong>Python</strong> and <strong>PySpark</strong> to acquire and transform data across Bronze, Silver, and Gold <strong>medallion layers</strong>.</li>
+                            <li>Wrote and optimized complex <strong>T-SQL</strong> queries for large datasets, improving performance and enabling efficient downstream analytics and reporting.</li>
+                            <li>Developed a cost optimization script and <strong>Azure Runbook</strong> to auto-scale Fabric capacity on a defined schedule, cutting monthly costs by ~<strong>30%</strong>.</li>
+                        </ul>
+                        <div class="tl-tags">
+                            <span>Python</span><span>SQL</span><span>PySpark</span><span>Azure</span><span>Microsoft Fabric</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-left">
+                        <div class="tl-period">Jan 2024 — Aug 2024</div>
+                        <div class="tl-dot"></div>
+                    </div>
+                    <div class="tl-card pink">
+                        <div class="tl-company">City of Toronto — Toronto Water</div>
+                        <div class="tl-role">Information Technology Intern</div>
+                        <ul class="tl-bullets">
+                            <li>Engineered a software solution in <strong>Visual Basic, C++, and MySQL</strong> to manage passwords, upload projects, and monitor security across <strong>600+ logic controllers</strong>.</li>
+                            <li>Designed a robust database schema with emphasis on security, scalability, and efficient retrieval.</li>
+                            <li>Built <strong>batch scripts</strong> to automate routine tasks across 9 SCADA servers.</li>
+                        </ul>
+                        <div class="tl-tags">
+                            <span>Visual Basic</span><span>C++</span><span>MySQL</span><span>SCADA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-left">
+                        <div class="tl-period">Sep 2021 — Jun 2026</div>
+                        <div class="tl-dot"></div>
+                    </div>
+                    <div class="tl-card teal">
+                        <div class="tl-company">Toronto Metropolitan University</div>
+                        <div class="tl-role">B.Sc. Honours in Computer Science — CGPA 3.70 / 4.3</div>
+                        <ul class="tl-bullets">
+                            <li>Relevant courses: Data Structures, Algorithms, Artificial Intelligence I, Computer Security, Operating Systems, Database Systems.</li>
+                        </ul>
+                        <div class="tl-tags">
+                            <span>Software Development</span><span>Databases</span><span>Operating Systems</span><span>Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-label">03: Projects</div>
+            <h2 class="section-title">Things I've<br>built.</h2>
+            <div class="projects-grid">
+
+                <a href="https://github.com/Jasdeep-S/pickup-football">
+                    <div class="proj-card">
+                        <div class="proj-thumb car-1">
+                            <div class="proj-overlay">
+                                <span class="proj-view">View Project <i class="fa fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                        <div class="proj-body">
+                            <h3>OpenPitch</h3>
+                            <p>A real time platform that allows players to create, discover, and join local pickup soccer/football games with ease.</p>
+                            <div class="proj-tags">
+                                <span>React (Next.js)</span><span>TypeScript</span><span>Supabase</span><span>Tailwind CSS</span><span>Leaflet</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Jasdeep-S/AroundTheWorld">
+                    <div class="proj-card">
+                        <div class="proj-thumb car-2">
+                            <div class="proj-overlay">
+                                <span class="proj-view">View Project <i class="fa fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                        <div class="proj-body">
+                            <h3>AroundTheWorld</h3>
+                            <p>A web app using the REST Countries API to explore nations worldwide. My first deep dive into working with external APIs.</p>
+                            <div class="proj-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="proj-card">
+                        <div class="proj-thumb car-3">
+                            <div class="proj-overlay">
+                                <span class="proj-view">View Project <i class="fa fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                        <div class="proj-body">
+                            <h3>Portfolio Website</h3>
+                            <p>A personal portfolio showcasing projects, skills, and experience (the very one you are viewing now).</p>
+                            <div class="proj-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="section-label">04: Contact</div>
+            <div class="contact-grid">
+                <div class="contact-left">
+                    <h2 class="section-title">Let's work<br>together<span class="teal-dot">.</span></h2>
+                    <p>I'm actively seeking new grad opportunities. Whether you have a role, a project idea, or just want to connect, feel free to reach out!</p>
+                    <a href="mailto:jsidhu1827@gmail.com" class="contact-email">jsidhu1827@gmail.com</a>
+                    <div class="contact-socials">
+                        <a href="https://www.linkedin.com/in/jasdeepsidhu8/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/Jasdeep-S" aria-label="GitHub"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" action="mailto:jsidhu1827@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Enter your message!" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-w">Send Message <i class="fa fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p class="footer-copy">© 2026 Jasdeep Sidhu.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/jasdeepsidhu8/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Jasdeep-S"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:jsidhu1827@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
